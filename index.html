@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  <style>
+
+    body {
+      background-color: hsl(30, 38%, 92%);
+    }
+    .whole {
+      display: flex;
+      margin: 10% 26%;
+      /* border-radius: 25px; */
+    }
+    .first {
+      width: 50%;
+    }
+    .first img {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    .second {
+      width: 50%;
+      background-color: #fff;
+    }
+
+    h5{
+      font-family: 'Montserrat';
+      font-weight: 500;
+      letter-spacing: 4px;
+      margin-left: 6%;
+      color: hsl(228, 12%, 48%);
+
+    }
+
+    h2 {
+      font-family: 'Fraunces';
+      margin-left: 6%;
+      margin-right: 14%;
+      color:  hsl(212, 21%, 14%);
+    }
+
+    p {
+
+      font-family: 'Montserrat';
+      font-weight: light;
+      font-size: 14px;
+      line-height: 20px;
+      margin-left: 4%;
+      margin-right: 4%;
+      color: hsl(228, 12%, 48%);
+
+    }
+
+    .span1{
+      font-size: 30px;
+      font-weight: 700;
+      color: hsl(158, 36%, 37%);
+      font-family: 'Fraunces';
+      margin-left: 6%;
+    }
+    .span2 {
+      font-size: 14px;
+      margin-left: 10%;
+      vertical-align: super;
+      font-family: 'Montserrat';
+      color: hsl(228, 12%, 48%);
+      text-decoration: line-through;
+    }
+
+    
+    .btn {
+      background-color: hsl(158, 36%, 37%);
+      color: #fff;
+      font-weight: 700;
+      margin: 8% 0;
+      padding: 4% 22%;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      font-family: 'Montserrat';
+      border-radius: 5px;
+      margin-left: 6%;
+    }
+
+    .btn:hover {
+      cursor: pointer;
+      background-color: hsl(158, 35%, 27%);
+    }
+
+    @media only screen and (max-width: 375px) {
+      .whole {
+        flex-direction: column;
+        gap:0;
+      }
+
+      .first , .second {
+        width: 100%;
+        /* height: 50%; */
+      }
+      .first>img {
+        height: 100px;
+        object-fit: cover;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0;
+      }
+
+      h5 {
+        font-size: 6px;
+      }
+
+      h2 {
+        font-size: 14px;
+        margin-top: 3%;
+        margin-right: 6%;
+        margin-bottom: 3%;
+      }
+
+      p {
+        font-size: 6px;
+        line-height: 8px;
+        margin-left: 6%;
+      }
+
+      .span1 {
+        font-size: 12px;
+      }
+
+      .span2 {
+        vertical-align: middle;
+        font-size: 6px;
+      }
+
+      .btn>img {
+        width: 10%;
+      }
+      .btn {
+        font-size: 6px;
+        border-radius: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="whole">
+  <div class="first">
+    <img src="./images/image-product-desktop.jpg" alt="">
+  </div>
+  <div class="second"> 
+    <h5>PERFUME</h5>
+
+  <h2>Gabrielle Essence Eau De Parfum
+</h2>
+<p>
+  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+  Perfumer-Creator for the House of CHANEL.
+</p>
+  <span class="span1">$149.99</span>
+  <span class="span2">$169.99</span>
+
+  <button class="btn">
+    <img src="./images/icon-cart.svg" alt="">
+    <span>Add to Cart</span></button>
+  </div>
+  </div>
+</body>
+</html>
